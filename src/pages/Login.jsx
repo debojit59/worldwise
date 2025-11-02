@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import PageNav from "../../../ultimate-react-course/11-worldwise/final/src/components/PageNav";
+import { Link } from "react-router-dom";
+import NavPage from "../components/NavPage";
 import styles from "./Login.module.css";
 
 export default function Login() {
@@ -10,7 +10,7 @@ export default function Login() {
 
   return (
     <main className={styles.login}>
-      <PageNav />
+      <NavPage />
       <form className={styles.form}>
         <div className={styles.row}>
           <label htmlFor="email">Email address</label>
@@ -31,9 +31,8 @@ export default function Login() {
             value={password}
           />
         </div>
-
         <div>
-          <NavLink to="/login" />
+          <Link to="/app">Login</Link>
         </div>
       </form>
     </main>
