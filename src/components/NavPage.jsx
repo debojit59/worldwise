@@ -14,7 +14,7 @@ export default function NavPage() {
           <NavLink to="/Product">Product</NavLink>
         </li>
         <li>
-          <NavLink to="/Login" className={styles.ctaLink}>
+          <NavLink to="/Login" className={styles.Login}>
             Login
           </NavLink>
         </li>
